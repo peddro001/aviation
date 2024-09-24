@@ -13,7 +13,7 @@ df['Quarter'] = df['Quarter'].astype('category')
 print(df['Aircraft'].value_counts().head())
 st.title("Aeroplane Accidents Data")
 
-st.header('Airplane Crashes By Quater')
+st.header('Airplane Crashes By Quarter')
 py.figure(figsize=(10,6))
 py.bar(df['Quarter'], df['Fatalities (air)'], color='brown')
 py.xlabel('Quarter')
